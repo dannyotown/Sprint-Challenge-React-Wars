@@ -17,21 +17,23 @@ const FlexDiv = styled.div`
 
 const App = () => {
   const [charNames, updateCharNames] = useState([]);
+  
   useEffect(()=>{
     axios.get('https://swapi.co/api/people/')
     .then(res=>updateCharNames(res.data.results))
     .catch(err=>console.log(err))
   },[]);
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <BodyContain>
-      <FlexDiv>
-        {charNames.map((charName, index)=>{
-           return <CharCard name={charName.name} height={charName.height} weight={charName.mass}
-           haircolor={charName.hair_color} skincolor ={charName.skin_color} gender={charName.gender}
-           key={index}></CharCard>;
-        })}
+        <FlexDiv>
+            {charNames.map((charName, index)=>{
+              return <CharCard name={charName.name} height={charName.height} weight={charName.mass}
+              haircolor={charName.hair_color} skincolor ={charName.skin_color} gender={charName.gender}
+              Key={index}></CharCard>;
+            })}
         </FlexDiv>
       </BodyContain>
     </div>

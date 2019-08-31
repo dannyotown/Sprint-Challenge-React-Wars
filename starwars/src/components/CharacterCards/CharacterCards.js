@@ -21,7 +21,7 @@ const CharacterName = styled.h1`
     font-size: 1.5rem;
 `;
 const NewH3 = styled(CharacterName)`
-    font-size: 1.25 rem;
+    font-size: 1.25rem;
     text-align: Center;
 `;
 const Attributes = styled.p`
