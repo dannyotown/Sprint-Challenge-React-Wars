@@ -26,13 +26,20 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React is a frontend library that helps developers create frontends! It helps keep code organized and grants the ability to reuse components of which you have created. It also "reloads" the part of the page that needs to be reloaded instead of the entire page.
+
 - [ ] What does it mean to _think_ in react?
+    Break down the website into components! Turn a large object into many small pieces.
 
 - [ ] Describe state.
+    State is the components data. When the component's data changes it will rerender this component. It determines the components behavior.
 
 - [ ] Describe props.
 
+Props are a way to pass data from a parent component to a child component.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    A side effect is something outside the scope of the function that is executed. You can sync the side effects by "subscribing" them. They will only be used when the "sub" is used.
 
 ## Project Set Up
 
