@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const CharacterCard = styled.div`
     margin: 0 auto;
     width: 30%;
-    height: 75%;
+    height: 325px;
     text-align:center; 
     border: white 1px solid;
     background-color: #443e3e;
@@ -15,6 +15,10 @@ const CharacterCard = styled.div`
     opacity: 0.7;
     padding: 1%;
     border-radius: 5px;
+    @media (max-width: 768px) {
+        width: 75%;
+        margin-bottom: 5%;
+    }
 `;
 const CharacterName = styled.h1`
     font-weight: bold;

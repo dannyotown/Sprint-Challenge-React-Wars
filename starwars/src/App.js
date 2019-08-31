@@ -13,6 +13,8 @@ const BodyContain = styled.div`
 const FlexDiv = styled.div`
     display: flex;
     flex-flow: row wrap;
+    @media (max-width: 768px) {
+      flex-flow: column nowrap;
 `;
 
 const App = () => {
